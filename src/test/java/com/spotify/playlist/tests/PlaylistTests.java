@@ -48,7 +48,7 @@ public class PlaylistTests extends BaseTest{
 
         Playlist response =  PlaylistApi.get(getDataLoaderInstance()
                             .getDataPropertyValue("get_Playlist_Id"),
-                            StatusCode.CODE_200.getCode())
+                            StatusCode.CODE_201.getCode())
                             .as(Playlist.class);
 
          assertThat(response.getName(),equalTo("Playliste^GOqPkebM"));
